@@ -48,9 +48,9 @@ El Cloud Computing es basa en un model de capes per donar serveis que podem resu
 |---|---|---|---|
 |Dades i accés|:computer:|:computer:|:computer:|
 |Aplicacions|:computer:|:computer:|:cloud:|
-|Runtime|:computer:|:computer:|:cloud:|
+|Runtime|:computer:|:cloud:|:cloud:|
 |SO|:computer:|:cloud:|:cloud:|
-|MV|:computer:|:cloud:|:cloud:|
+|MV|:cloud|:cloud:|:cloud:|
 |Xarxa|:cloud:|:cloud:|:cloud:|
 |Computació|:cloud:|:cloud:|:cloud:|
 |Magatzematge|:cloud:|:cloud:|:cloud:|
