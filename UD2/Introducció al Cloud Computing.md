@@ -23,7 +23,7 @@ Com hem explicat seria quan no tenim infraestructura per als servicis de HW o SW
 
 ## Cloud Computing vs Virtualització
 
-Hem vist la virtualització en hipervisors per a crear entorns de prova i estudi ( exemple de VirtualBox) i hem parlat de la virtualització de servidors en instal·lacions locals ( exemple de Proxmox). Ara estem veient un altre aspecte que seria el Cloud Computing i que no devem confondre.
+Hem vist la virtualització en hipervisors per a crear entorns de prova i estudi ( Hipervisor de Tipus 2, exemple de VirtualBox) i hem parlat de la virtualització de servidors en instal·lacions locals ( Hipervisors de tipus 1, exemple de Proxmox). Ara estem veient un altre aspecte que seria el Cloud Computing i que no devem confondre.
 
 **Consideracions:**
 
