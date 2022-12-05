@@ -102,4 +102,4 @@ fitxer.txt
 tomas@portatil:~/Documents/textos$
 ```
 
-![tail](./IMATGES/tail.png =300x)
+![tail](./IMATGES/tail.png)
