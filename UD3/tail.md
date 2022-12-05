@@ -102,4 +102,4 @@ fitxer.txt
 tomas@portatil:~/Documents/textos$
 ```
 
-![tail](./IMATGES/tail.png){width:40%}
+![tail](./IMATGES/tail.png =30%x)
