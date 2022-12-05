@@ -96,4 +96,4 @@ f09
 f10
 f11
 ```
-`
+<img src='./IMATGES/had.png' width=60%/>
