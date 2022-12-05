@@ -130,5 +130,5 @@ No obstant, les característiques i diferències poden anar variant.
 * Machine Learning. Capacitat d'aprenentatge( auto aprenentatge ) de les computadores.
 * IA. Intel·ligència Artificial. Part de la ciència de la computació que intenta replicar i desenvolupar la el procés racional de la intel·ligència.
 
-![ccbyncsa](../IMATGES/cco.png){width=20%}
+![ccbyncsa](../cco.png){width=20%}
 
