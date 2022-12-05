@@ -100,6 +100,6 @@ f12
 f13
 fitxer.txt
 tomas@portatil:~/Documents/textos$
-``
+```
 
 ![tail](./IMATGES/tail.png){width=40%}
