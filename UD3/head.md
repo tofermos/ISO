@@ -16,10 +16,7 @@ f01
 f02
 f03
 f04
-f05tomas@portatil:~/Documents/textos$ ls
-f01  f03  f05  f07  f09  f11  f13
-f02  f04  f06  f08  f10  f12
-
+f05
 f06
 f07
 f08
