@@ -5,8 +5,8 @@ _Ajuda:_ Pots copiar i apaegar en un editor de text creant un fitxer "fitxer" i 
 ```bash
  tr "·" " " <fitxer>fitxer1
 ```
-> linux······unix···windows·······ms-dos···dr-dos····mac-os···cotxas
-hal·········klatu·····robot···········barada····matrix····arbusto··terminator
+> linux······unix···windows·······ms-dos···dr-dos····mac-os···cotxas   
+hal·········klatu·····robot···········barada····matrix····arbusto··terminator   
 carme····usto······pere·············maria·····josep······anna·······susanna······montse
 camio····cotxe····carreto·········bicicleta·moto······susto·······helicopter
 cotxes···avions···biccccicletessss
@@ -83,39 +83,33 @@ ls -l ~|grep ^-..x..x..x
 Crea un fitxer anomenat agenda amb aquesta informació:
 
 
-> Josep Garcia
-> +34 678 456 545
-jgarcia234@gmail.com
-C/Perú, 23
-València, València
-Carme Velázquez
-+46 567 456 342
-carmen@hotmail.com
-C/ Sin nombre
-Gandia, València
-Aina Cohen
-+34 675 545 343
-ainamallorca@mallordca.org
-C/ Menorca
-Palam, Mallorca
+> Josep Garcia  
++34 678 456 545   
+jgarcia234@gmail.com   
+C/Perú, 23   
+València, València   
+Carme Velázquez   
++46 567 456 342  
+carmen@hotmail.com  
+C/ Sin nombre  
+Gandia, València  
+Aina Cohen  
++34 675 545 343  
+ainamallorca@mallorca.org  
+C/ Menorca  
+Palam, Mallorca  
 
 
 1. Fes una cerca per un número de telèfon qualsevol amb l’ajuda de la comanda grep. Fes que es vegin tant la línia anterior (opció -B, busca a l’ajuda) com les tres línies posteriors.
-2. Fes el mateix però ara cercant per correu electrònic. Crea un àlies a dins de .bashrc
-(anomena’l email) que ens permeti fer aquesta cerca de forma més còmoda.
-3. Busca recursivament al directori /etc totes les línies de tots els fitxers que continguin la paraula hostname. A l’executar l’ordre com a usuaris normals és possible que ens apareguin molts errors per pantalla. Com ho faríem per evitar que surtin aquests errors per
-pantalla? (sense emprar sudo o executar-ho com a root).
-Data última modificació: 22/12/21 Pàgina 4 de 5
-4. Per a l’anterior ordre, afegeix amb “|” l’ordre necessària per a comptar el nombre de
-trobades de la paraula “hostname”.
-5. Compta el nombre de processos amb nom bash que hi hagi en execució al teu ordinador.
 
 ```bash
-grep "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
+grep "+[0-9]\{2,2\} [0-9]\{3,3\} [0-9]\{3,3\} [0-9]\{3,3\}" text1 
 ```
 ```bash
-grep -B 1 -A 3 "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
+grep -B 1 -A 3 "+[0-9]\{2,2\} [0-9]\{3,3\} [0-9]\{3,3\} [0-9]\{3,3\}" text1
 ```
+2. Fes el mateix però ara cercant per correu electrònic. Crea un àlies a dins de .bashrc
+(anomena’l email) que ens permeti fer aquesta cerca de forma més còmoda.
 ```bash
 grep ".*@.*\.\(org\|com\|net\)" text1 
 ```
@@ -127,10 +121,16 @@ El provem
 ```bash
 buscaemail text1 
 ```
-Afegim la línia
+Eliminem-lo
+```bash
+unalias buscaemail
+```
+Afegim la línia al fitxer bashrc del nostre directori de treball
 ```bash
 sudo nano ~/.bashrc
 ```
+3. Busca recursivament al directori /etc totes les línies de tots els fitxers que continguin la paraula hostname. A l’executar l’ordre com a usuaris normals és possible que ens apareguin molts errors per pantalla. Com ho faríem per evitar que surtin aquests errors per
+pantalla? (sense emprar sudo o executar-ho com a root).
 ```bash
 grep -r "\<hostname\>" /etc
 ```
@@ -141,13 +141,16 @@ grep -r "\<hostname\>" /etc 2>/dev/null
 ```bash
 grep -r -s "\<hostname\>" /etc
 ```
-Comptar amb |
+
+4. Per a l’anterior ordre, afegeix amb “|” l’ordre necessària per a comptar el nombre de
+trobades de la paraula “hostname”.
 ```bash
 grep -r "\<hostname\>" /etc 2>/dev/null|wc -l
 ```
-Procesos amb bash
+
+5. Compta el nombre de processos amb nom bash que hi hagi en execució al teu ordinador.
 ```bash
-ps -aux|grep bash
+ps -aux|grep "\<bash\>"
 ```
 
 
