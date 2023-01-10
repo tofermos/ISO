@@ -35,6 +35,46 @@ tomas@portatil:~/Documents/proves$ ls -l ~|grep ^-..x..x..x
 tomas@portatil:~/Documents/proves$ chmod u+x,g+x,o+x ~/f?
 tomas@portatil:~/Documents/proves$ ls -l ~|grep ^-..x..x..x
 ```
+Execici 2
+```bash
+tomas@portatil:~/Documents/proves$ grep "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
++12345 678
++2345 6789
++345 67890
+tomas@portatil:~/Documents/proves$ grep -B 1 -A 3 "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
+Charly Pingüí
++12345 678
+tux@linux.org
+C/ del Pol Sud
+Vilatux, Antàrtica
+Pepito uno
++2345 6789
+pepito@linux.org
+C/ uno
+Gandia, València
+Jaimito dos
++345 67890
+jaimito@linux.org
+C/ dos
+Benidorm, Alacant
+```
+
+```bash
+tomas@portatil:~/Documents/proves$ grep ".*@.*\.\(org\|com\|net\)" text1 
+tux@linux.org
+pepito@linux.org
+jaimito@linux.org
+```
+Creem el alias
+```bash
+tomas@portatil:~/Documents/proves$ alias buscaemail='grep ".*@.*\.\(org\|com\|net\)"'
+tomas@portatil:~/Documents/proves$ buscaemail text1 
+tux@linux.org
+pepito@linux.org
+jaimito@linux.org
+```
+
+
 
 tr "·" " "<fitxer1
 
@@ -42,6 +82,11 @@ tr "·" " "<fitxer1
 
 
 
+
+                   tomas@portatil:~/Documents/proves$ grep ".*@.*\.\(org\|com\|net\)" text1 
+tux@linux.org
+pepito@linux.org
+jaimito@linux.org
 
 
 
