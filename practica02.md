@@ -79,7 +79,7 @@ chmod u+x,g+x,o+x ~/f?
 ls -l ~|grep ^-..x..x..x
 ```
 
-## Execici 2
+## Exercici 2
 Crea un fitxer anomenat agenda amb aquesta informació:
 
 
