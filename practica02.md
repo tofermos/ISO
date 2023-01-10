@@ -14,64 +14,74 @@ executables. Després fes amb ls i grep que es llistin només els executables de
 directori personal o de treball.
 13. Les línies amb almenys 8 espais seguits.
 ```bash
-tomas@portatil:~/Documents/proves$ grep x fitxer1 
-
-camio····cotxe····carreto·········bicicleta·moto······susto·······helicopter
-tomas@portatil:~/Documents/proves$ grep - fitxer1 
-
-tomas@portatil:~/Documents/proves$ grep ^c fitxer1 
-
-tomas@portatil:~/Documents/proves$ grep r$ fitxer1 
-tomas@portatil:~/Documents/proves$ grep [xd] fitxer1 
-tomas@portatil:~/Documents/proves$ grep cotxes* fitxer1 
-tomas@portatil:~/Documents/proves$ grep "\<cotxe\>" fitxer1
-tomas@portatil:~/Documents/proves$ grep "\<ca" fitxer1
-tomas@portatil:~/Documents/proves$ grep "dos\> fitxer1tomas@portatil:~/Documents/proves$ grep "\<ca" fitxer1
-tomas@portatil:~/Documents/proves$ grep "n\{2,2\}" fitxer1
-tomas@portatil:~/Documents/proves$ grep "n\{2,\}" fitxer1
-tomas@portatil:~/Documents/proves$ ls -l ~|grep ^d
-tomas@portatil:~/Documents/proves$ chmod u+x,g+x,o+x ~/f?
-tomas@portatil:~/Documents/proves$ ls -l ~|grep ^-..x..x..x
-tomas@portatil:~/Documents/proves$ chmod u+x,g+x,o+x ~/f?
-tomas@portatil:~/Documents/proves$ ls -l ~|grep ^-..x..x..x
+grep x fitxer1 
 ```
+```bash
+grep - fitxer1 
+```
+```bash
+grep ^c fitxer1 
+```
+```bash
+grep r$ fitxer1 
+```
+```bash
+grep [xd] fitxer1 
+```
+```bash
+grep cotxes* fitxer1 
+```
+```bash
+grep "\<cotxe\>" fitxer1
+```
+```bash
+grep "\<ca" fitxer1
+```
+```bash
+grep "dos\> fitxer1
+```
+```bash
+grep "\<ca" fitxer1
+```
+```bash
+grep "n\{2,2\}" fitxer1
+```
+```bash
+grep "n\{2,\}" fitxer1
+```
+```bash
+ls -l ~|grep ^d
+```
+```bash
+chmod u+x,g+x,o+x ~/f?
+```
+```bash
+ls -l ~|grep ^-..x..x..x
+```
+```bash
+chmod u+x,g+x,o+x ~/f?
+```
+```bash
+ls -l ~|grep ^-..x..x..x
+```
+
 Execici 2
 ```bash
-tomas@portatil:~/Documents/proves$ grep "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
-+12345 678
-+2345 6789
-+345 67890
-tomas@portatil:~/Documents/proves$ grep -B 1 -A 3 "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
-Charly Pingüí
-+12345 678
-tux@linux.org
-C/ del Pol Sud
-Vilatux, Antàrtica
-Pepito uno
-+2345 6789
-pepito@linux.org
-C/ uno
-Gandia, València
-Jaimito dos
-+345 67890
-jaimito@linux.org
-C/ dos
-Benidorm, Alacant
+grep "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
+```
+grep -B 1 -A 3 "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
 ```
 
 ```bash
-tomas@portatil:~/Documents/proves$ grep ".*@.*\.\(org\|com\|net\)" text1 
-tux@linux.org
-pepito@linux.org
-jaimito@linux.org
+grep ".*@.*\.\(org\|com\|net\)" text1 
 ```
 Creem el alias
 ```bash
-tomas@portatil:~/Documents/proves$ alias buscaemail='grep ".*@.*\.\(org\|com\|net\)"'
-tomas@portatil:~/Documents/proves$ buscaemail text1 
-tux@linux.org
-pepito@linux.org
-jaimito@linux.org
+alias buscaemail='grep ".*@.*\.\(org\|com\|net\)"'
+```
+El provem
+```bash
+buscaemail text1 
 ```
 Afegim la línia
 ```bash
@@ -93,11 +103,7 @@ grep -r "\<hostname\>" /etc 2>/dev/null|wc -l
 ```
 Procesos amb bash
 ```bash
-tomas@portatil:~$ ps -aux|grep bash
-tomas       4881  0.0  0.0  19556  5684 pts/0    Ss+  15:23   0:00 bash
-tomas       6292  0.0  0.0  20272  6556 pts/1    Ss+  15:44   0:00 bash
-tomas       8468  0.0  0.0  19436  5536 pts/2    Ss   17:00   0:00 bash
-tomas       8845  0.0  0.0  17248  2224 pts/2    S+   17:13   0:00 grep --color=auto bash
+ps -aux|grep bash
 ```
 
 
