@@ -1,3 +1,18 @@
+## Exercici 1
+Tecleja un arxiu amb nano com el següena però els “·” substitueix-los per espais.
+
+_Ajuda:_ Pots copiar i apaegar en un editor de text creant un fitxer "fitxer" i després executar :
+```bash
+ tr "·" " " <fitxer>fitxer1
+```
+> linux······unix···windows·······ms-dos···dr-dos····mac-os···cotxas
+hal·········klatu·····robot···········barada····matrix····arbusto··terminator
+carme····usto······pere·············maria·····josep······anna·······susanna······mont
+se
+camio····cotxe····carreto·········bicicleta·moto······susto·······helicopter
+cotxes···avions···biccccicletessss
+Almeuordinadoralgunacosalifalla
+
 1. Fes que ens escrigui per pantalla totes les línies que tinguin una ‘x’ almenys
 2. Totes les línies amb guions
 3. Totes les línies que comencen amb ‘c’
@@ -65,13 +80,40 @@ chmod u+x,g+x,o+x ~/f?
 ls -l ~|grep ^-..x..x..x
 ```
 
-Execici 2
+## Execici 2
+Crea un fitxer anomenat agenda amb aquesta informació:
+>Charly Pingüí
++12345 678
+tux@linux.org
+C/ del Pol Sud
+Vilatux, Antàrtica
+Pepito uno
++2345 6789
+pepito@linux.org
+C/ uno
+Gandia, València
+Jaimito dos
++345 67890
+jaimito@linux.org
+C/ dos
+Benidorm, Alacant
+
+1. Fes una cerca per un número de telèfon qualsevol amb l’ajuda de la comanda grep. Fes que es vegin tant la línia anterior (opció -B, busca a l’ajuda) com les tres línies posteriors.
+2. Fes el mateix però ara cercant per correu electrònic. Crea un àlies a dins de .bashrc
+(anomena’l email) que ens permeti fer aquesta cerca de forma més còmoda.
+3. Busca recursivament al directori /etc totes les línies de tots els fitxers que continguin la paraula hostname. A l’executar l’ordre com a usuaris normals és possible que ens apareguin molts errors per pantalla. Com ho faríem per evitar que surtin aquests errors per
+pantalla? (sense emprar sudo o executar-ho com a root).
+Data última modificació: 22/12/21 Pàgina 4 de 5
+4. Per a l’anterior ordre, afegeix amb “|” l’ordre necessària per a comptar el nombre de
+trobades de la paraula “hostname”.
+5. Compta el nombre de processos amb nom bash que hi hagi en execució al teu ordinador.
+
 ```bash
 grep "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
 ```
+```bash
 grep -B 1 -A 3 "+[0-9]\{3,5\} [0-9]\{3,5\}" text1 
 ```
-
 ```bash
 grep ".*@.*\.\(org\|com\|net\)" text1 
 ```
