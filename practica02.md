@@ -73,22 +73,31 @@ tux@linux.org
 pepito@linux.org
 jaimito@linux.org
 ```
-
-
-
-tr "·" " "<fitxer1
-
-
-
-
-
-
-                   tomas@portatil:~/Documents/proves$ grep ".*@.*\.\(org\|com\|net\)" text1 
-tux@linux.org
-pepito@linux.org
-jaimito@linux.org
-
-
-
-
+Afegim la línia
+```bash
+sudo nano ~/.bashrc
 ```
+```bash
+grep -r "\<hostname\>" /etc
+```
+Omitir errors en pantalla ( 2 solucions possibles)
+```bash
+grep -r "\<hostname\>" /etc 2>/dev/null
+```
+```bash
+grep -r -s "\<hostname\>" /etc
+```
+Comptar amb |
+```bash
+grep -r "\<hostname\>" /etc 2>/dev/null|wc -l
+```
+Procesos amb bash
+```bash
+tomas@portatil:~$ ps -aux|grep bash
+tomas       4881  0.0  0.0  19556  5684 pts/0    Ss+  15:23   0:00 bash
+tomas       6292  0.0  0.0  20272  6556 pts/1    Ss+  15:44   0:00 bash
+tomas       8468  0.0  0.0  19436  5536 pts/2    Ss   17:00   0:00 bash
+tomas       8845  0.0  0.0  17248  2224 pts/2    S+   17:13   0:00 grep --color=auto bash
+```
+
+
