@@ -7,8 +7,7 @@ _Ajuda:_ Pots copiar i apaegar en un editor de text creant un fitxer "fitxer" i 
 ```
 > linux······unix···windows·······ms-dos···dr-dos····mac-os···cotxas
 hal·········klatu·····robot···········barada····matrix····arbusto··terminator
-carme····usto······pere·············maria·····josep······anna·······susanna······mont
-se
+carme····usto······pere·············maria·····josep······anna·······susanna······montse
 camio····cotxe····carreto·········bicicleta·moto······susto·······helicopter
 cotxes···avions···biccccicletessss
 Almeuordinadoralgunacosalifalla
@@ -82,21 +81,24 @@ ls -l ~|grep ^-..x..x..x
 
 ## Execici 2
 Crea un fitxer anomenat agenda amb aquesta informació:
->Charly Pingüí
-+12345 678
-tux@linux.org
-C/ del Pol Sud
-Vilatux, Antàrtica
-Pepito uno
-+2345 6789
-pepito@linux.org
-C/ uno
+
+
+> Josep Garcia
+> +34 678 456 545
+jgarcia234@gmail.com
+C/Perú, 23
+València, València
+Carme Velázquez
++46 567 456 342
+carmen@hotmail.com
+C/ Sin nombre
 Gandia, València
-Jaimito dos
-+345 67890
-jaimito@linux.org
-C/ dos
-Benidorm, Alacant
+Aina Cohen
++34 675 545 343
+ainamallorca@mallordca.org
+C/ Menorca
+Palam, Mallorca
+
 
 1. Fes una cerca per un número de telèfon qualsevol amb l’ajuda de la comanda grep. Fes que es vegin tant la línia anterior (opció -B, busca a l’ajuda) com les tres línies posteriors.
 2. Fes el mateix però ara cercant per correu electrònic. Crea un àlies a dins de .bashrc
